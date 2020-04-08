@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Party Tickets Order Form</title> 
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css"> 
+		<link rel="stylesheet" href="tickets.css">
+	</head>
+
+	<body>
+		<!-- The header starts here -->
+		<header>
+			<img src="pumpkin.gif" alt="Pumpkin" width="85">
+			<h2>The Halloween Store</h2>
+			<h3>For the little Goblin in all of us!</h3>
+		</header>
+		
+		<!-- navigation menu starts here -->
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="about_us.html">About Us</a>
+					<ul>						
+						<li><a href="our_history.html">Our History</a></li>
+						<li><a href="our_team.html">Our Team</a></li>
+					</ul>
+				</li>
+				<li><a href="products.html">Our Products</a></li>
+				<li><a href="tickets_order_form.html">Party Tickets</a></li>
+				<li><a href="contact_us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<!-- main content of the body starts here -->
+<main>
+			<!-- sidebar starts here for the lists -->
+			<aside>
+				<ul>
+					<li><a href="products/props.html">Props</a></li>
+					<li><a href="products/costumes.html">Costumes</a></li>
+					<li><a href="products/special.html">Special FX</a></li>
+					<li><a href="products/masks.html">Masks</a></li>
+				</ul>
+			</aside>
+
+			<!-- the main section of the content starts here and form-->
+  <section>
+				 
+	<h1>Buy Tickets for a Halloween Party</h1>
+				
+	<form name = "Order_form" method = "post" action="place_order.html" >
+    
+		<fieldset> 
+  
+			<legend>Member Information</legend>  
+			 
+			 <label for = "Email">Email</label>
+				<input autofocus type = "email" name = "Email"   
+				class = "text" maxlength="20" title = "Email format"
+				required /><br>
+  
+			 <label for = "firstname">First Name</label>
+				<input type = "text" name = "firstname"   
+				class = "text" maxlength="20" required title = "Legal firstname" /><br>
+
+			 <label for = "lastname">Last Name</label>
+				<input type = "text" name = "lastname"   
+				class = "text" maxlength="20" required title = "official lastname" /><br> 
+	
+			 <label for = "Address">Address</label>
+				<input type = "text" name = "Address"  id = "non-Color"
+				class = "text" maxlength="20" required title = "current address"/><br> 
+	
+			 <label for = "City">City</label>
+               <input type = "text" name = "firstname"  
+			   class = "text" maxlength="20" required title = "enter valid city" /><br> 
+	
+			 <label for = "Province">Province</label>
+				<input type = "text" name = "Province" size ="20" 
+				placeholder = "2-Character Code" maxlength="2" required title = "Input two letters for province" /><br> 
+	
+			 <label for = "Postal Code">Postal Code</label>
+				<input type = "text" name = "Postal Code" size ="20"
+				placeholder = "6 Characters" maxlength="6" required title = "Should be a length of 6 characters" /><br> 
+	
+			 <label for = "Phone Number" >Phone Number</label>
+				<input type = "text" name = "Phone Number" size ="20" id = "non-Color"
+				placeholder = "999-999-9999" maxlength="12" required title = "Max length of 12 characters" /><br>
+    
+		</fieldset>  
+ <!--Second field starts here-->
+		<fieldset> 
+   
+			<legend>Ordering Information </legend> 
+	   
+				<label for = "Party">Party:</label>  
+	
+					<select name = "Party">
+	
+						<option value = "1" selected = "selected">Fang-tastic Feast</option>
+						<option value = "2">Fright Night</option>
+						<option value = "3" >Ghouls' Night Out</option>
+						<option value = "4">Monster Mash</option> 
+		
+					</select>   
+	
+				<br>
+	
+			<label for = "Type of Order">Order Type:</label>  
+	
+	 
+					<select name = "Order Type">
+	
+						<option value = "1">Donor Package</option>
+						<option value = "2" selected = "selected">Member Package</option>
+						<option value = "3" >Single Tickets</option>
+			
+					</select> 
+	
+				<br>
+	
+			<label for = "Number Of Tickets">Number Of Tickets:</label>
+				<input type = "text" name = "Number Of Tickets" 
+		        Placeholder = "Number Of Single Tickets" class = "text" maxlength="20"/><br> 
+	
+	    </fieldset>  
+	<!--Third Fieldset starts here-->
+		<fieldset> 
+	
+			<legend id = "Payment">Payment Method</legend>
+				 
+				<label for = "Bill Me">Bill Me</label> 
+				<input type = "radio" name = "Pay"  value = "Bill" />
+				<label for = "Credit Card">Credit Card</label>
+				<input type = "radio" name = "Pay"  value = "Card" />
+				 
+	
+		</fieldset>  
+<!--Fourth fieldset starts here-->
+		<fieldset> 
+   
+			<legend>Credit Card Information </legend> 
+	   
+				<label for = "Card Type">Card Type:</label>  
+	
+					<select name = "Card Type">
+					
+						<option value = "1" selected = "selected">Visa</option>
+						<option value = "2">Master Card</option>
+						<option value = "3" >Discover</option>
+		
+					</select> 
+	
+			<br>
+			
+				<label for = "Card Number">Card Number</label>
+					<input type = "text" name = "Card Number" size ="20" 
+					placeholder = "16 Digits" maxlength="16" required /><br>
+    
+				<label for = "Expiration Date">Expiration Date:</label>  
+	
+				<select name = "Month" id = "month">
+	
+					<option value = "1" selected = "selected">January</option>
+					<option value = "2">February</option>
+					<option value = "3" >March</option> 
+					<option value = "4" >April</option> 
+					<option value = "5" >May</option> 
+					<option value = "6" >June</option> 
+					<option value = "7" >July</option> 
+					<option value = "8" >August</option> 
+					<option value = "9" >September</option> 
+					<option value = "10" >October</option> 
+					<option value = "11" >November</option> 
+					<option value = "12" >December</option>
+		
+				</select>
+	
+				<select name = "Year" id = "year" >
+	
+					<option value = "1" selected = "selected">2015</option>
+					<option value = "2">2016</option>
+					<option value = "3" >2017</option> 
+					<option value = "4" >2018</option> 
+					<option value = "5" >2019</option> 
+		
+				</select>
+	
+		</fieldset>   
+	<!--The fifth fieldset starts here-->
+		<Fieldset id = "Buttons">  
+	
+			<legend>Submit Your Order </legend>  
+	 
+				<input type = "submit" value = "Submit" ID = "Submitbutton" />
+				<input type = "reset" value = "Reset Fields" ID = "Resetbutton" /> 
+		
+		</Fieldset>
+	
+	</form>
+	
+  </section>
+  
+	</main>
+<!-- the footer will be starting here -->
+		<footer>
+		
+			<p>&copy; 2020 Rabi Gadilatolwe</p>
+			
+		</footer>
+		
+	</body>
+</html>
